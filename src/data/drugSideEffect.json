@@ -1,0 +1,19 @@
+{
+  "sideEffects": [
+    {
+      "mixedDrugs": [
+        "P",
+        "AS"
+      ],
+      "newState": "X"
+    },
+    {
+      "mixedDrugs": [
+        "I",
+        "AN"
+      ],
+      "stateFrom": "H",
+      "newState": "F"
+    }
+  ]
+}

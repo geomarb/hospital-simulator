@@ -1,0 +1,42 @@
+{
+  "drugs": [
+    {
+      "id": "AS",
+      "description": "Aspirin",
+      "treat": "F",
+      "sideEffect": {
+        "mixedDrug": "P",
+        "stateTo": "X"
+      }
+    },
+    {
+      "id": "AN",
+      "description": "Antibiotic",
+      "treat": "T",
+      "sideEffect": {
+        "mixedDrug": "I",
+        "stateFrom": "H",
+        "stateTo": "F"
+      }
+    },
+    {
+      "id": "I",
+      "description": "Insulin",
+      "treat": "D",
+      "sideEffect": {
+        "mixedDrug": "AN",
+        "patientState": "H",
+        "stateTo": "F"
+      }
+    },
+    {
+      "id": "P",
+      "description": "Paracetamol",
+      "treat": "F",
+      "sideEffect": {
+        "mixedWith": "AS",
+        "stateTo": "X"
+      }
+    }
+  ]
+}
