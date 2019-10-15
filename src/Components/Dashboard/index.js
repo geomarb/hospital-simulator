@@ -8,14 +8,20 @@ import Help from './Help'
 export default function Dashboard() {
   const [patients, setPatients] = useState([])
   const [showHelp, setShowHelp] = useState(false)
+  const [givenDrugs, setGivenDrugs] = useState([])
   return (
     <div className="dashboard">
       <header>
         <h1>Hospital Simulator</h1>
       </header>
       <HealthyStateItem patients={patients} />
-      <DrugItem />
-      <CommandForm setPatients={setPatients} setShowHelp={setShowHelp} showHelp={showHelp} />
+      <DrugItem givenDrugs={givenDrugs} />
+      <CommandForm
+        setPatients={setPatients}
+        setShowHelp={setShowHelp}
+        setGivenDrugs={setGivenDrugs}
+        showHelp={showHelp}
+      />
       {showHelp ? (<Help />) : ""}
     </div>
   )

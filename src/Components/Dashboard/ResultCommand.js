@@ -8,7 +8,7 @@ export default function ResultCommand({ result, setResult, flyingSpaghettiMonste
         result.error ? (
           <div className="output output-error">
             <button className="output-close-button output-close-button-error" onClick={() => setResult("")}>X</button>
-            <p className="output-result"> {result.error}!</p>
+            <p className="output-result">{result.error}!</p>
           </div>
         ) :
           ""
@@ -17,7 +17,7 @@ export default function ResultCommand({ result, setResult, flyingSpaghettiMonste
         result.text ? (
           <div className="output output-text">
             <button className="output-close-button output-close-button-text" onClick={() => setResult("")}>X</button>
-            <p className="output-result">$ {result.text}</p>
+            <p className="output-result">{result.text}</p>
           </div>
         ) :
           ""

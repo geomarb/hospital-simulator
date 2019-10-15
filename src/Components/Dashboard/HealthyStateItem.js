@@ -3,19 +3,26 @@ import { healthyStates } from '../../data/healthyState.json'
 
 export default function HealthyStateItem({ patients }) {
   return (
-    <div className="healthyState">
-      <h2>Healthty States</h2>
+    <div className="healthy-state">
+      <h2
+        className={patients.length > 0 ? "changed" : ""}
+      >Healthty States</h2>
       <ul>
         {healthyStates.map(state => {
           return (
-            <li key={state.id}>
+            <li
+              key={state.id}
+              className={patients.find(patient => patient.state === state.id) ? "changed" : ""}
+            >
               <header>{state.description}</header>
               <strong>{patients.filter(patient => patient.state === state.id).length}</strong>
             </li>
           )
         })}
-        <li>
-          <header>Total</header>
+        <li
+          className={patients.length > 0 ? "changed" : ""}
+        >
+          <header>TOTAL</header>
           <strong>{patients.length}</strong>
         </li>
       </ul>

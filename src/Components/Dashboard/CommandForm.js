@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import execute from '../../Controller/command'
 import ResultCommand from './ResultCommand'
 
-export default function CommandForm({ setPatients, setShowHelp, showHelp }) {
+export default function CommandForm({ setPatients, setShowHelp, setGivenDrugs, showHelp }) {
   const startCommand = ""//`"D,D,F" "I,P,AS"`
   const [command, setCommand] = useState(startCommand)
   const [result, setResult] = useState("")
@@ -17,11 +17,16 @@ export default function CommandForm({ setPatients, setShowHelp, showHelp }) {
     e.preventDefault()
 
     setCommand(startCommand)
-    const { newPatients, newResult, flyingSpaghettiMonsterWasHere, error } = execute(command)
-    const showResult = !!newResult ? { text: newResult } : { error }
+    const { newPatients,
+      newResult,
+      givenDrugs,
+      flyingSpaghettiMonsterWasHere,
+      error } = execute(command)
+    const showResult = !!newResult ? { text: `[${command}] : ${newResult}` } : { error }
 
     setPatients(newPatients || [])
     setResult(showResult)
+    setGivenDrugs(givenDrugs || [])
     setFlyingSpaghettiMonsterWasHere(flyingSpaghettiMonsterWasHere)
   }
 

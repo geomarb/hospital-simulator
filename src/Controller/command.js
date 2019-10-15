@@ -64,6 +64,7 @@ export default function executeCommand(command) {
   return {
     newPatients,
     newResult,
+    givenDrugs: drugParams || [],
     flyingSpaghettiMonsterWasHere
   }
 }
@@ -89,7 +90,7 @@ function flyingSpaghettiMonsterNoodlyPower(patients) {
 export function processSideEffect(state, drugParamID, missDrugId) {
   let missDrugIdFound
   let newStateFound = state
-
+  //console.log('1# state, drugParamID, missDrugId', state, drugParamID, missDrugId)
   const foundSideEffect = sideEffects.find(({ mixedDrugs }) => {
     return mixedDrugs.find(id => id === drugParamID)
   })
@@ -97,13 +98,16 @@ export function processSideEffect(state, drugParamID, missDrugId) {
     const { mixedDrugs, stateFrom, newState } = foundSideEffect
     if (!missDrugId) {
       missDrugIdFound = mixedDrugs.find(id => id !== drugParamID)
-    } else {
+      // console.log('2# encontrou a medicação: missDrugIdFound', missDrugIdFound)
+    } else if (missDrugId === drugParamID) {
+      // console.log('3# passou o paramentro: missDrugIdFound = missDrugId', missDrugIdFound, missDrugId)
       missDrugIdFound = missDrugId
       if (state === stateFrom || !stateFrom) {
         newStateFound = newState
       }
     }
   }
+  //console.log('4# state, missDrugIdFound, newStateFound', missDrugIdFound, newStateFound)
 
   return { missDrugIdFound, newState: newStateFound }
 }
