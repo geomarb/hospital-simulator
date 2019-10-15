@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import execute from '../../Controller/command'
-import ResultCommand from './ResultCommand'
+import execute from '../../../Controller/command'
+import ResultCommand from '../ResultCommand'
+import './styles.css'
+
 
 export default function CommandForm({ setPatients, setShowHelp, setGivenDrugs, showHelp }) {
   const startCommand = ""//`"D,D,F" "I,P,AS"`

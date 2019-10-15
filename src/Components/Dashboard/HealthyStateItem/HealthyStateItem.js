@@ -1,6 +1,6 @@
 import React from 'react'
-import { healthyStates } from '../../data/healthyState.json'
-
+import { healthyStates } from '../../../data/healthyState.json'
+import './styles.css'
 export default function HealthyStateItem({ patients }) {
   return (
     <div className="healthy-state">

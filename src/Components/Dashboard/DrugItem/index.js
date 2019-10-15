@@ -1,6 +1,6 @@
 import React from 'react'
-import { drugs } from '../../data/drug.json'
-
+import { drugs } from '../../../data/drug.json'
+import './styles.css'
 export default function DrugItem({ givenDrugs }) {
   return (
     <div className="drugs">

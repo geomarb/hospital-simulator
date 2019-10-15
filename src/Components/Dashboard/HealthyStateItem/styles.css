@@ -1,0 +1,31 @@
+.healthy-state h2 {
+  background: #c8a7a7;
+}
+
+
+.healthy-state ul li {
+  background: #ddc2c2;
+  height: 50px;
+}
+
+.healthy-state ul li.changed,
+.healthy-state h2.changed {
+  background: #4d2d2d;
+}
+
+.healthy-state ul li.changed header,
+.healthy-state h2.changed {
+  color: rgb(214, 214, 214);
+}
+
+.healthy-state ul li.changed strong {
+  color: rgb(233, 232, 232);
+}
+
+.healthy-state ul li.changed:hover {
+  background: #3b2222;
+}
+
+.healthy-state ul li:hover {
+  background: #caabab;
+}

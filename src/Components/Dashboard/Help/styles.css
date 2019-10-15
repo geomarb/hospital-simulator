@@ -1,0 +1,57 @@
+.help-button {
+  margin-left: 10px;
+  width: 200px;
+  background: lightyellow;
+}
+
+.help-button:hover {
+  background: rgb(212, 212, 172);
+}
+
+.help {
+  display: inline;
+  text-align: left;
+  padding: 50px 50px;
+  margin: 0;
+  border: 0;
+}
+
+.help h2 {
+  padding: 0;
+  margin: 4px 5px;
+  border: 0;
+}
+
+.help h3 {
+  padding: 0;
+  margin: 3px 10px;
+  border: 0;
+}
+
+.help h4 {
+  padding: 0;
+  margin: 2px 15px;
+  border: 0;
+}
+
+.help p {
+  padding: 0 20px;
+  margin: 2px;
+  border: 0;
+  font-size: 14px;
+}
+
+.help li {
+  padding: 0 25px;
+  margin: 2px;
+  border: 0;
+}
+
+.help li strong {
+  padding: 0;
+  margin: 2px;
+  border: 0;
+  font: inherit;
+  font: bold;
+  color: black
+}

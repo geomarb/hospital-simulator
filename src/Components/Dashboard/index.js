@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './styles.css'
-import HealthyStateItem from './HealthyStateItem'
+import HealthyStateItem from './HealthyStateItem/HealthyStateItem'
 import CommandForm from './CommandForm'
 import DrugItem from './DrugItem'
 import Help from './Help'

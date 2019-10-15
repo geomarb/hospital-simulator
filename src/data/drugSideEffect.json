@@ -5,7 +5,7 @@
         "P",
         "AS"
       ],
-      "newState": "X"
+      "stateTo": "X"
     },
     {
       "mixedDrugs": [
@@ -13,7 +13,7 @@
         "AN"
       ],
       "stateFrom": "H",
-      "newState": "F"
+      "stateTo": "F"
     }
   ]
 }
