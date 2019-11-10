@@ -3,39 +3,39 @@
     {
       "id": "AS",
       "description": "Aspirin",
-      "treat": "F",
+      "treatHealthStateId": "F",
       "sideEffect": {
-        "mixedDrug": "P",
-        "stateTo": "X"
+        "mixedWithDrugId": "P",
+        "newHealthyStateId": "X"
       }
     },
     {
       "id": "AN",
       "description": "Antibiotic",
-      "treat": "T",
+      "treatHealthStateId": "T",
       "sideEffect": {
-        "mixedDrug": "I",
-        "stateFrom": "H",
-        "stateTo": "F"
+        "mixedWithDrugId": "I",
+        "currentHealthyStateId": "H",
+        "newHealthyStateId": "F"
       }
     },
     {
       "id": "I",
       "description": "Insulin",
-      "treat": "D",
+      "treatHealthStateId": "D",
       "sideEffect": {
-        "mixedDrug": "AN",
-        "patientState": "H",
-        "stateTo": "F"
+        "mixedWithDrugId": "AN",
+        "currentHealthyStateId": "H",
+        "newHealthyStateId": "F"
       }
     },
     {
       "id": "P",
       "description": "Paracetamol",
-      "treat": "F",
+      "treatHealthStateId": "F",
       "sideEffect": {
-        "mixedWith": "AS",
-        "stateTo": "X"
+        "mixedWithDrugId": "AS",
+        "newHealthyStateId": "X"
       }
     }
   ]
