@@ -10,7 +10,7 @@ const flyingSpaghettiMonsterNoodlyPower = (patients) => {
 
   if (flyingSpaghettiMonsterRandomNumber === noodlyPowerLuckyNumber) {
     newPatients = patients.map((patient) => {
-      if (patient.state === 'X' && !flyingSpaghettiMonsterWasHere) {
+      if (patient.healthyStateId === 'X' && !flyingSpaghettiMonsterWasHere) {
         flyingSpaghettiMonsterWasHere = true;
 
         return { state: 'H' };

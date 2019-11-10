@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import execute from '../../../Controller/command';
+import processInput from '../../../Controller/processInput';
 import ResultCommand from '../ResultCommand';
 import './styles.css';
 
@@ -22,15 +22,15 @@ export default function CommandForm({
 
     setCommand(startCommand);
     const {
-      newPatients,
+      patients,
       output,
       givenDrugs,
       flyingSpaghettiMonsterWasHere,
       error,
-    } = execute(command);
+    } = processInput(command);
     const showResult = output ? { text: `[${command}] : ${output}` } : { error };
 
-    setPatients(newPatients || []);
+    setPatients(patients || []);
     setResult(showResult);
     setGivenDrugs(givenDrugs || []);
     setFlyingSpaghettiMonsterWasHere(flyingSpaghettiMonsterWasHere);
