@@ -5,11 +5,11 @@
 ```
 +--processInput(input)
 |
-|--+--+validateAndSplitParams(params)
-|     |
-|     +--lastCharacterOf(healthStatusParams) 
-|     |
-|     +--lastCharacterOf(drugParams)
+|--+validateAndSplitParams(params)
+|  |
+|  +--lastCharacterOf(healthStatusParams) 
+|  |
+|  +--lastCharacterOf(drugParams)
 |  
 |--+--+findWrongHealthStatusParam(healthStatusIdList)
 |  |  |
