@@ -29,7 +29,7 @@ const processInput = (input) => {
     healthStatusIdList,
     drugIdList,
     error,
-  } = validateAndSplitParams(params, HealthStatus.isHealthStatus, Drug.isDrug);
+  } = validateAndSplitParams(params);
 
   if (error) return { error };
 
