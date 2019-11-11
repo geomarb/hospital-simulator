@@ -9,28 +9,28 @@ Drugs can change patients’ states. They can cure, cause side effects or even k
 
 # Health Statuses
 Patients can have one of these states:
-● F: Fever
-● H: Healthy
-● D: Diabetes
-● T: Tuberculosis
-● X: Dead
+* F: Fever
+* H: Healthy
+* D: Diabetes
+* T: Tuberculosis
+* X: Dead
 
 # Drugs
 This is the list of available drugs:
-● As: Aspirin
-● An: Antibiotic
-● I: Insulin
-● P: Paracetamol
+* As: Aspirin
+* An: Antibiotic
+* I: Insulin
+* P: Paracetamol
 
 # Rules
 Drugs effects are described by the following rules:
-● Aspirin cures Fever;
-● Antibiotic cures Tuberculosis;
-● Insulin prevents diabetic subject from dying, does not cure Diabetes;
-● If insulin is mixed with antibiotic, healthy people catch Fever;
-● Paracetamol cures Fever;
-● Paracetamol kills subject if mixed with aspirin;
-● One time in a million the Flying Flying Spaghetti Monster shows his noodly power
+* Aspirin cures Fever;
+* Antibiotic cures Tuberculosis;
+* Insulin prevents diabetic subject from dying, does not cure Diabetes;
+* If insulin is mixed with antibiotic, healthy people catch Fever;
+* Paracetamol cures Fever;
+* Paracetamol kills subject if mixed with aspirin;
+* One time in a million the Flying Flying Spaghetti Monster shows his noodly power
 and resurrects a dead patient (Dead becomes Healthy).
 
 # Input
@@ -46,14 +46,14 @@ The result should be sent to stdout.
 It should be a comma separated string with number of patients with a given state, following the format:
 F:NP,H:NP,D:NP,T:NP,X:NP
 Where:
-● F, H, D, T, X are patients’ health status codes;
+* ``` F, H, D, T, X ```are patients’ health status codes;
 ● NP is a number of patients for a given state;
-E.g. “F:0,H:2,D:0,T:0,X:1” means there are two healthy patients and one that is dead.
+E.g. ```“F:0,H:2,D:0,T:0,X:1” ```means there are two healthy patients and one that is dead.
 
 # Examples
 
-## 1. Input: “D,D” “”
-Output: “F:0,H:0,D:0,T:0,X:2” (diabetic patients die without insulin)
+## 1. Input: ```“D,D” “”```
+Output: ``` “F:0,H:0,D:0,T:0,X:2”  ```(diabetic patients die without insulin)
 
-## 2. Input: “F” “P”
-Output: “F:0,H:1,D:0,T:0,X:0” (paracetamol cures fever)
+## 2. Input: ```“F” “P”```
+Output: ```“F:0,H:1,D:0,T:0,X:0” ```(paracetamol cures fever)
