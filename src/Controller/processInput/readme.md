@@ -5,35 +5,35 @@
 ```
 +--processInput(input)
 |
-|  +--validateAndSplitParams(params)
-|  |  |
-|  |  +--lastCharacterOf(healthStatusParams) 
-|  |  |
-|  |  +--lastCharacterOf(drugParams)
-|  |
-|  +--findWrongHealthStatusParam(healthStatusIdList)
+|--+--validateAndSplitParams(params)
+|     |
+|     +--lastCharacterOf(healthStatusParams) 
+|     |
+|     +--lastCharacterOf(drugParams)
+|  
+|--+--findWrongHealthStatusParam(healthStatusIdList)
 |  |  |
 |  |  +--HealthStatus.isHealthStatus(healthStatusId)
 |  |
 |  +--findWrongDrugParam(drugIdList)
-|  |  |
-|  |  +--Drug.isDrug(drugParamId)
-|  |
+|     |
+|     +--Drug.isDrug(drugParamId)
+|
 +--HealthStatus.loadFromListOfIDs(healthStatusIdList)
-|  |
+|  
 +--Drug.loadFromListOfIDs(drugIdList)
-|  |
+|
 +--generatePatients(healthStatuses, drugs)
 |  |
 |  +--getHealthStatusId(healthStatus)
 |  |
 |  +--processDrugsAndGetHealthStatusId(healthStatus, drugs)
-|  |  |
-|  |  +--getSideEffectFromDrugs(drugs)
-|  |  |
-|  |  +--getHealthStatusId(healthStatus, sideEffect, drugTreatsHealthySate)
-|  |
+|     |
+|     +--getSideEffectFromDrugs(drugs)
+|     |
+|     +--getHealthStatusId(healthStatus, sideEffect, drugTreatsHealthySate)
+|   
 +--getIndexOfADeadPatient(patients)
-|  |
+|
 +--formatOutput(patients)
 ```
