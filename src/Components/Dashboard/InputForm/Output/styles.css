@@ -1,0 +1,29 @@
+.output {
+  align-content: center;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: space-between;
+  margin: 5px 0 10px 0;
+  border-radius: 5px;
+}
+
+.output-result {
+  margin: auto;
+}
+
+.output-close-button {
+  background: #888;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 34px;
+  width: 34px;
+  color: inherit;
+  outline: none;
+  border: none;
+}
+
+.output-close-button:hover {
+  background: #777;
+}

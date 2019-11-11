@@ -1,0 +1,12 @@
+.output-error {
+  color: rgb(255, 240, 156);
+  background: rgba(126, 4, 4, 0.977);
+}
+
+.output-close-button-error {
+  background: rgba(198, 4, 4, 0.977);
+}
+
+.output-close-button-error:hover {
+  background: rgba(219, 2, 2, 0.977);
+}
