@@ -17,8 +17,8 @@ Patients can have one of these states:
 
 # Drugs
 This is the list of available drugs:
-* As: Aspirin
-* An: Antibiotic
+* AS: Aspirin
+* AN: Antibiotic
 * I: Insulin
 * P: Paracetamol
 
@@ -39,15 +39,14 @@ and resurrects a dead patient (Dead becomes Healthy).
 List of patients' health status codes, separated by a comma. e.g. ```“D,F,F”``` means we have 3 patients, one with diabetes and two with fever.
 
 ## Parameter 2
-List of drugs codes, separated by a comma, e.g. ```“As,I”``` means patients will be treated with Aspirin and Insulin.
+List of drugs codes, separated by a comma, e.g. ```“AS,I”``` means patients will be treated with Aspirin and Insulin.
 
 # Output
-The result should be sent to stdout.
-It should be a comma separated string with number of patients with a given state, following the format:
+The text output is showed on screen separated by health status, colon, number of patients and comma, as following format:
 ```F:NP,H:NP,D:NP,T:NP,X:NP```
 Where:
 * ``` F, H, D, T, X ```are patients’ health status codes;
-* NP is a number of patients for a given state;
+* ```NP``` is a number of patients for a given state;
 E.g. ```“F:0,H:2,D:0,T:0,X:1” ```means there are two healthy patients and one that is dead.
 
 # Examples
