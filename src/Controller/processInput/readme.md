@@ -2,7 +2,7 @@
 
 ## Function Tree
 
-```js
+```jsx
 +processInput(input)
 |
 |--+--+validateAndSplitParams(params)
