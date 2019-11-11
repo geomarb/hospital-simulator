@@ -5,17 +5,17 @@
 ```
 +--processInput(input)
 |
-|--+--validateAndSplitParams(params)
+|--+--+validateAndSplitParams(params)
 |     |
 |     +--lastCharacterOf(healthStatusParams) 
 |     |
 |     +--lastCharacterOf(drugParams)
 |  
-|--+--findWrongHealthStatusParam(healthStatusIdList)
+|--+--+findWrongHealthStatusParam(healthStatusIdList)
 |  |  |
 |  |  +--HealthStatus.isHealthStatus(healthStatusId)
 |  |
-|  +--findWrongDrugParam(drugIdList)
+|  +--+findWrongDrugParam(drugIdList)
 |     |
 |     +--Drug.isDrug(drugParamId)
 |
@@ -23,11 +23,11 @@
 |  
 +--Drug.loadFromListOfIDs(drugIdList)
 |
-+--generatePatients(healthStatuses, drugs)
++--+generatePatients(healthStatuses, drugs)
 |  |
 |  +--getHealthStatusId(healthStatus)
 |  |
-|  +--processDrugsAndGetHealthStatusId(healthStatus, drugs)
+|  +--+processDrugsAndGetHealthStatusId(healthStatus, drugs)
 |     |
 |     +--getSideEffectFromDrugs(drugs)
 |     |
