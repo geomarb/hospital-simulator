@@ -9,11 +9,11 @@
 |  |  |
 |  |  +--+lastCharacterOf(healthStatusParams) 
 |  |  |
-|  +  +--+lastCharacterOf(drugParams)
+|  |  +--+lastCharacterOf(drugParams)
 |  |
 |  +--+findWrongHealthStatusParam(healthStatusIdList)
 |  |  |
-|  +  +--HealthStatus.isHealthStatus(healthStatusId)
+|  |  +--HealthStatus.isHealthStatus(healthStatusId)
 |  |
 |  +--+findWrongDrugParam(drugIdList)
 |     |
