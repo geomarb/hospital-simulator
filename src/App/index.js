@@ -1,14 +1,18 @@
 import React from 'react';
-import Dashboard from '../Components/Dashboard'
+import Dashboard from '../Components/Dashboard';
 import './styles.css';
+import HealthStatus from '../models/HealthStatus';
+import Drug from '../models/Drug';
+import processInput from '../Controller/processInput';
 
-function App() {
+const App = () => (
+  <div className="App">
+    <Dashboard
+      healthStatuses={HealthStatus.loadAll()}
+      drugs={Drug.loadAll()}
+      processInput={processInput}
+    />
+  </div>
+);
 
-  return (
-    <div className="App">
-      <Dashboard />
-    </div>
-  );
-}
-
-export default App;
+export { App as default };

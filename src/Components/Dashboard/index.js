@@ -1,28 +1,38 @@
-import React, { useState } from 'react'
-import './styles.css'
-import HealthyStateItem from './HealthyStateItem/HealthyStateItem'
-import CommandForm from './CommandForm'
-import DrugItem from './DrugItem'
-import Help from './Help'
+import React, { useState } from 'react';
+import './styles.css';
+import HealthStatuses from './HealthStatuses';
+import InputForm from './InputForm';
+import Drugs from './Drugs';
 
-export default function Dashboard() {
-  const [patients, setPatients] = useState([])
-  const [showHelp, setShowHelp] = useState(false)
-  const [givenDrugs, setGivenDrugs] = useState([])
+import Help from './Help';
+
+const Dashboard = ({ healthStatuses, drugs, processInput }) => {
+  const [patients, setPatients] = useState([]);
+  const [showHelp, setShowHelp] = useState(false);
+  const [givenDrugs, setGivenDrugs] = useState([]);
+
   return (
     <div className="dashboard">
       <header>
         <h1>Hospital Simulator</h1>
       </header>
-      <HealthyStateItem patients={patients} />
-      <DrugItem givenDrugs={givenDrugs} />
-      <CommandForm
+      <HealthStatuses
+        patients={patients || []}
+        healthStatuses={healthStatuses}
+      />
+      <Drugs
+        givenDrugs={givenDrugs || []}
+        drugs={drugs}
+      />
+      <InputForm
         setPatients={setPatients}
         setShowHelp={setShowHelp}
         setGivenDrugs={setGivenDrugs}
         showHelp={showHelp}
+        processInput={processInput}
       />
-      {showHelp ? (<Help />) : ""}
+      <Help showHelp={showHelp} setShowHelp={setShowHelp} />
     </div>
-  )
-}
+  );
+};
+export { Dashboard as default };

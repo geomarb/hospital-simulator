@@ -5,10 +5,11 @@
 form {
   background: #555;
   border-radius: 5px;
+  margin-top: 10px;
   padding: 10px 15px;
 }
 
-form button,
+.button,
 input {
   border: none;
   border-radius: 4px;
@@ -18,7 +19,7 @@ input {
   width: 100%;
 }
 
-form button {
+.button {
   background: rgb(214, 214, 214);
   color: #222;
   cursor: pointer;
@@ -32,7 +33,7 @@ form input {
   font-family: 'Courier New', Courier, monospace;
 }
 
-form button:hover {
+.button:hover {
   background: rgb(175, 174, 174);
 }
 
