@@ -47,7 +47,7 @@ It should be a comma separated string with number of patients with a given state
 F:NP,H:NP,D:NP,T:NP,X:NP
 Where:
 * ``` F, H, D, T, X ```are patients’ health status codes;
-● NP is a number of patients for a given state;
+* NP is a number of patients for a given state;
 E.g. ```“F:0,H:2,D:0,T:0,X:1” ```means there are two healthy patients and one that is dead.
 
 # Examples
