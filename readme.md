@@ -36,10 +36,10 @@ and resurrects a dead patient (Dead becomes Healthy).
 # Input
 
 ## Parameter 1
-List of patients' health status codes, separated by a comma. e.g. “D,F,F” means we have 3 patients, one with diabetes and two with fever.
+List of patients' health status codes, separated by a comma. e.g. ```“D,F,F”``` means we have 3 patients, one with diabetes and two with fever.
 
 ## Parameter 2
-List of drugs codes, separated by a comma, e.g. “As,I” means patients will be treated with Aspirin and Insulin.
+List of drugs codes, separated by a comma, e.g. ```“As,I”``` means patients will be treated with Aspirin and Insulin.
 
 # Output
 The result should be sent to stdout.
