@@ -5,19 +5,19 @@
 ``` 
 +processInput(input)
 |
-|--+validateAndSplitParams(params)
+|--+--+validateAndSplitParams(params)
+|  |  |
+|  |  +--+lastCharacterOf(healthStatusParams) 
+|  |  |
+|  +  +--+lastCharacterOf(drugParams)
 |  |
-|  +--+lastCharacterOf(healthStatusParams) 
+|  +--+findWrongHealthStatusParam(healthStatusIdList)
+|  |  |
+|  +  +--HealthStatus.isHealthStatus(healthStatusId)
 |  |
-|  +--+lastCharacterOf(drugParams)
-|  |
-|  +findWrongHealthStatusParam(healthStatusIdList)
-|  |
-|  +--+HealthStatus.isHealthStatus(healthStatusId)
-|  |
-|  +findWrongDrugParam(drugIdList)
-|  |
-|  +--+Drug.isDrug(drugParamId)
+|  +--+findWrongDrugParam(drugIdList)
+|     |
+|     +--+Drug.isDrug(drugParamId)
 |
 +--+HealthStatus.loadFromListOfIDs(healthStatusIdList)
 |  
