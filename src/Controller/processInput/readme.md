@@ -2,7 +2,7 @@
 
 ## Function Tree
 
-```
+``` ```
 +processInput(input)
 |
 |--+validateAndSplitParams(params)
