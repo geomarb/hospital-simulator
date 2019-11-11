@@ -44,7 +44,7 @@ List of drugs codes, separated by a comma, e.g. “As,I” means patients will b
 # Output
 The result should be sent to stdout.
 It should be a comma separated string with number of patients with a given state, following the format:
-F:NP,H:NP,D:NP,T:NP,X:NP
+```F:NP,H:NP,D:NP,T:NP,X:NP```
 Where:
 * ``` F, H, D, T, X ```are patients’ health status codes;
 * NP is a number of patients for a given state;
@@ -53,7 +53,7 @@ E.g. ```“F:0,H:2,D:0,T:0,X:1” ```means there are two healthy patients and on
 # Examples
 
 ## 1. Input: ```“D,D” “”```
-Output: ``` “F:0,H:0,D:0,T:0,X:2”  ```(diabetic patients die without insulin)
+Output: ```“F:0,H:0,D:0,T:0,X:2”``` (diabetic patients die without insulin)
 
 ## 2. Input: ```“F” “P”```
-Output: ```“F:0,H:1,D:0,T:0,X:0” ```(paracetamol cures fever)
+Output: ```“F:0,H:1,D:0,T:0,X:0”```(paracetamol cures fever)
