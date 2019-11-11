@@ -11,13 +11,13 @@
 |  |
 |  +--lastCharacterOf(drugParams)
 |  
-|--+--+findWrongHealthStatusParam(healthStatusIdList)
-|  |  |
-|  |  +--HealthStatus.isHealthStatus(healthStatusId)
+|--+findWrongHealthStatusParam(healthStatusIdList)
 |  |
-|  +--+findWrongDrugParam(drugIdList)
-|     |
-|     +--Drug.isDrug(drugParamId)
+|  +--HealthStatus.isHealthStatus(healthStatusId)
+|
+|--+findWrongDrugParam(drugIdList)
+|  |
+|  +--Drug.isDrug(drugParamId)
 |
 +--HealthStatus.loadFromListOfIDs(healthStatusIdList)
 |  
